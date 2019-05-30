@@ -26,59 +26,95 @@
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/logo" />
 
-            <EditText
-                android:id="@+id/whiteSalary"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/whiteSalaryTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="Белый оклад"
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                android:hint="Белый оклад">
 
-            <EditText
-                android:id="@+id/blackSalary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="Чёрный оклад"
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/whiteSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/weekends"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/blackSalaryTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="Отработано выходных"
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                android:hint="Чёрный оклад">
 
-            <EditText
-                android:id="@+id/mileage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="Пробег за месяц"
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/blackSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/fuelCost"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/weekendsTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:hint="Стоимость 1 литра топлива"
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                android:hint="Отработано выходных">
 
-            <EditText
-                android:id="@+id/consumption"
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/weekends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mileageTil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="Средний расход за 100 км."
-                android:inputType="numberDecimal"
-                android:maxLines="1" />
+                android:hint="Пробег за месяц">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/mileage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fuelCostTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Стоимость топлива">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fuelCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/consumptionTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Средний расход на 100 км.">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/consumption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
